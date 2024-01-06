@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memento Mori</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        #quote-section {
+            margin-bottom: 40px;
+        }
+
+        #quote {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        #author {
+            font-size: 18px;
+            color: #777;
+        }
+
+        #age-counter {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 48px;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            #age-counter {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h1>Memento Mori</h1>
+        </div>
+        <div id="quote-section">
+            <div id="quote">"Do not act as if you had ten thousand years to throw away. Death stands at your elbow. Be good for something while you still live and it is in your power."</div>
+            <div id="author">- Marcus Aurelius</div>
+        </div>
+        <div id="age-counter">Loading...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
