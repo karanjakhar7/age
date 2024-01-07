@@ -1,15 +1,15 @@
-const birthDate = new Date('2000-03-13'); // Replace with your birth date
+const birthDate_getTime = new Date('2000-03-13').getTime(); // Replace with your birth date
 const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
 
-function calculateAge(birthDate) {
+function calculateAge(birthDate_getTime) {
     const now = new Date();
-    const diff = now.getTime() - birthDate.getTime();
+    const diff = now.getTime() - birthDate_getTime;
     const age = diff / millisecondsPerYear;
     return age;
 }
 
 function displayAge() {
-    const age = calculateAge(birthDate);
+    const age = calculateAge(birthDate_getTime);
     document.getElementById('age-counter').textContent = age.toFixed(11); // Adjust the precision as needed
     requestAnimationFrame(displayAge);
 }
